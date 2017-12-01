@@ -26,7 +26,7 @@ fi
 # Run helm command
 if [[ ! -z "$HELM_COMMAND" ]]; then
 	echo "Running ${HELM_COMMAND}"
-	${HELM_COMMAND}
+	eval "${HELM_COMMAND}"
 else
 	echo "Helm command not found. Please provide a helm command"
 fi
