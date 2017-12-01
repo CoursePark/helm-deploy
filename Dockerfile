@@ -1,7 +1,7 @@
 FROM alpine
 
 ENV KUBE_VERSION="v1.7.2"
-ENV HELM_VERSION="v2.6.1"
+ENV HELM_VERSION="v2.7.2"
 
 RUN  apk add --no-cache curl git \
  && curl -LO https://storage.googleapis.com/kubernetes-release/release/${KUBE_VERSION}/bin/linux/amd64/kubectl \
